@@ -1,3 +1,11 @@
-body {
-  background-color: peachpuff;
+/* matches
+
+li:matches(:nth-child(even), .target) {
+  background-color: rosybrown;
+} 
+
+li:not(.target) {
+  background-color: hotpink;
 }
+
+*/
