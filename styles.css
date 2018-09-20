@@ -1,3 +1,13 @@
+@custom-media --ipad-size (450px <= width < 850px);
+
+@media (--ipad-size) {
+  body {
+    background-color: palegoldenrod;
+  }
+}
+
+/* CSS Variables , @custom-selector
+
 :root {
   --awsomeColor: #2980b9;
   --awsomeLine: 1px solid red;
@@ -14,6 +24,7 @@ li:first-child a {
   color: #8e44ad;
 }
 
+*/
 /* matches
 
 li:matches(:nth-child(even), .target) {
