@@ -1,3 +1,19 @@
+:root {
+  --awsomeColor: #2980b9;
+  --awsomeLine: 1px solid red;
+}
+
+li:first-child a {
+  color: var(--awsomeColor);
+  border: var(--awsomeLine);
+}
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+  color: #8e44ad;
+}
+
 /* matches
 
 li:matches(:nth-child(even), .target) {
