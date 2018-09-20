@@ -1,3 +1,23 @@
+main {
+  background-color: blue;
+  & section {
+    background-color: red;
+    width: 500px;
+    & li {
+      background-color: yellow;
+      width: 400px;
+      & a {
+        color: black;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+/* color-mod, gray(), system-ui
+
 body {
   font-family: system-ui;
 }
@@ -9,6 +29,8 @@ h1 {
 h1:hover {
   color: color-mod(#f1c40f lightness(10%));
 }
+
+*/
 
 /* @custom-media and media-range
 
