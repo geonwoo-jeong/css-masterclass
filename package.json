@@ -1,0 +1,11 @@
+{
+  "name": "css-masterclass",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/geonwoo-jeong/css-masterclass",
+  "author": "Geonwoo-Jeong <geonwoo.jeong@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html"
+  }
+}
