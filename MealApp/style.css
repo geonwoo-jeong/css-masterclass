@@ -1,5 +1,8 @@
 :root {
   --padding: 25px;
+  --borderTop: 1px solid rgba(0, 0, 0, 0.1);
+  --grey: #403d53;
+  --white: #fafafc;
 }
 
 * {
@@ -7,7 +10,8 @@
 }
 
 body {
-  background-color: #fafafc;
+  font-family: system-ui;
+  background-color: var(--white);
 }
 
 .header {
@@ -75,7 +79,7 @@ body {
 .featured {
   padding: var(--padding);
   padding-top: var(--padding);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: var(--borderTop);
 }
 
 .featured .featured__title {
@@ -96,12 +100,13 @@ body {
 
 .featured-meal {
   height: 150px;
-  background-color: red;
   border-radius: 10px;
   display: flex;
   align-items: flex-end;
   padding: 20px;
   justify-content: space-between;
+  background-size: cover;
+  background-position: center center;
 }
 
 .featured-meal__title {
@@ -109,11 +114,91 @@ body {
 }
 
 .featured-meal__button {
+  border: none;
   background-color: white;
-  padding: 5px;
   text-align: center;
+  font-size: var(--padding);
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.recipes {
+  margin-top: var(--padding);
+  padding-top: var(--padding);
+  border-top: var(--borderTop);
+}
+
+.recipes__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: var(--padding);
+}
+
+.recipes__list .recipe:nth-child(odd) {
+  background-color: white;
+}
+
+.recipes__list .recipe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px var(--padding);
+}
+
+.recipe .recipe__btn {
+  border: none;
+  background-color: white;
+  text-align: center;
+  font-size: var(--padding);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu .menu__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__item:hover .menu__icon {
+  background-color: var(--grey);
+  color: var(--white);
+}
+
+.menu__item:hover .menu__text {
+  font-weight: 900;
+}
+
+.menu__item .menu__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 1);
+  height: 50px;
+  width: 50px;
+}
+
+.menu__icon .icon {
+  font-size: var(--padding);
+}
+
+.menu__item .menu__text {
+  padding-top: 12px;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .featured-meal:first-child {
